@@ -24,8 +24,21 @@ Note: Order of arguments does not matter, so be wary of the layer order when wor
 
 (Firstmost to most last layer) 0xEE > 0x66 > 0x88 > 0xFF
 
-## License
-Distributed under the MIT License. See ``LICENSE`` for more information.
+## Building
+### Dependencies
+- cmake
+- C++ compiler
+### Compiling
+1. Clone the repository either on Github by clicking ``Code`` and clicking ``Download Zip`` on the dropdown and unzipping the download, or with ``git clone https://github.com/SinsofSloth/InkPainting``, if you have git bash installed.
+2. In the root of the downloaded directory:
+```
+mkdir build
+cd build
+cmake ../
+cmake --build . --config Release
+```
 ## External Libraries
 - [lodepng](https://github.com/lvandeve/lodepng)
 - [cxxopts](https://github.com/jarro2783/cxxopts)
+## License
+Distributed under the MIT License. See ``LICENSE`` for more information.
