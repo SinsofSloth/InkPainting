@@ -16,7 +16,7 @@ Arguments can be passed like so:
 
 Splits raster image into layers based on the alpha of the pixel.
 
-``InkPainting --merge --0xFF=input_file_0xFF.png --0xEE=input_file_0xEE.png --0x88=input_file_0x88.png --0x66=input_file_0x66.png --output="output_file"``
+``InkPainting --merge --0xFF=input_file_0xFF.png --0xEE=input_file_0xEE.png --0x88=input_file_0x88.png --0x66=input_file_0x66.png --output=output_file``
 
 Merges raster images into one image based on the alpha of the pixel. 
 
