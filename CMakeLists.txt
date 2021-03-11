@@ -7,5 +7,5 @@ project ("InkPainting")
 
 # Add source to this project's executable.
 add_executable (InkPainting "InkPainting.cpp" "InkPainting.h" "include/lodepng.h" "include/cxxopts.h" "src/lodepng.cpp")
-
+include_directories(include/)
 # TODO: Add tests and install targets if needed.
