@@ -3,11 +3,10 @@
 void split_image(std::string const input, std::string const output)
 {
     std::vector<unsigned char> image;
-    unsigned width, height;
-    unsigned error = lodepng::decode(image, width, height, input);
-    if (error)
+    unsigned int width, height;
+    if (unsigned error = lodepng::decode(image, width, height, input))
     {
-        std::cout << "decoder error " << error << ": " << lodepng_error_text(error) << std::endl;
+        std::cout << "Decoder error " << error << ": " << lodepng_error_text(error) << std::endl;
         exit(0);
     }
 
@@ -137,11 +136,11 @@ void merge(std::string const input_FF, std::string const input_EE, std::string c
         }
         for (size_t i = 0; i < image_66.size(); i+= 4)
         {
-            if (image_66[i + 3] > 0 && 0x66 > image[i + 3])
+            if (image_66[i + 3] > 0 && 0x88 > image[i + 3])
             {  
-                image[i] = image_EE[i];
-                image[i + 1] = image_EE[i + 1];
-                image[i + 2] = image_EE[i + 2];
+                image[i] = image_66[i];
+                image[i + 1] = image_66[i + 1];
+                image[i + 2] = image_66[i + 2];
                 image[i + 3] = 0x66;
             }
         }
