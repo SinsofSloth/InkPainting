@@ -1,8 +1,5 @@
 ﻿# CMakeList.txt : CMake project for InkPainting, include source and define
 # project specific logic here.
-#
-set(CMAKE_SYSTEM_NAME Darwin)
-
 cmake_minimum_required (VERSION 3.8)
 
 project ("InkPainting")
