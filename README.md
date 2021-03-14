@@ -12,7 +12,7 @@ Arguments can be passed like so:
 -ab
 -abc argument
 ```
-``InkPainting --split=tmp.png --output=output_file``
+``InkPainting --split=input_file.png --output=output_file``
 
 Splits raster image into layers based on the alpha of the pixel.
 
