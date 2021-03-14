@@ -27,9 +27,9 @@ Note: Order of arguments does not matter, so be wary of the layer order when wor
 ## Building
 ### Dependencies
 - cmake
-- C++ compiler
+- C++ compiler with C++11 support
 ### Compiling
-1. Clone the repository either on Github by clicking ``Code`` and clicking ``Download Zip`` on the dropdown and unzipping the download, or with ``git clone https://github.com/SinsofSloth/InkPainting``, if you have git bash installed.
+1. Clone the repository either on Github by clicking ``Code`` and clicking ``Download Zip`` on the dropdown and unzipping the download, or with ``git clone https://github.com/SinsofSloth/InkPainting``, if you have git installed.
 2. In the root of the downloaded directory:
 ```
 mkdir build
